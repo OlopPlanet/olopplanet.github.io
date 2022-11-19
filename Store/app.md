@@ -5,7 +5,6 @@
 <script type="text/javascript">
     $(document).ready(function() {
         const str = window.location.href;
-
         const words = str.split('#');
         $("#c").load("App/"+words[1]+".app");
         $("down").html('<a href="Downloads/'+words[1]+'"><img src="Downico.png"></a>')
