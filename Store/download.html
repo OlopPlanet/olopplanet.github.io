@@ -45,8 +45,8 @@ Votre application va se télécharger !<br><div id="noolop">Cette application a 
     $(document).ready(function() {
         const str = window.location.href;
         const words = str.split('#');
-        if(words[1].indexOf("Olop") >= 0){$("#noolop").html("Félicitation d'avoir jejoint la communauté Olop !");}
-        location.href="Files/"+words[1]+".zip";
+        if(words[1].indexOf("Olop") >= 0){$("#noolop").html("Félicitation d'avoir jejoint la communauté Olop !");
+        location.href="Files/Olop.jar"}else {location.href="Files/"+words[1]+".zip";}
     });
     </script>
   </body>
