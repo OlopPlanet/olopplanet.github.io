@@ -39,15 +39,14 @@
       <h1 id="olop--olopplanet">Le site officiel d'OlopPlanet</h1>
       <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <link href="style.css" rel="stylesheet">
-<div id="c">Chargement... <noscript>Activez Javascript pour accéder aux applications</noscript></div>
-<br><div id="down"></div>
+Votre application va se télécharger !<br><div id="noolop">Cette application a besion d'Olop pour fontionner.<a href="app.html#Olop">Télécharger Olop</a></div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         const str = window.location.href;
         const words = str.split('#');
-        $("#c").load("App/"+words[1]+".app");
-        $("#down").html('<a href="download.html#'+words[1]+'"><img src="Download on Olop.png" style="color:rgb(51,51,51);"></a>');
+        if(words[1].indexOf("Olop") >= 0){$("#noolop").html("Félicitation d'avoir jejoint la communauté Olop !");}
+        location.href="Files/"+words[1]+".zip";
     });
     </script>
   </body>
