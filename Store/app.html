@@ -47,7 +47,11 @@
         const str = window.location.href;
         const words = str.split('#');
         $("#c").load("App/"+words[1]+".app");
-        $("#down").html('<a href="download.html#'+words[1]+'"><img src="Download_on_Olop.png" style="color:rgb(51,51,51);"></a>');
+        if(!words[1].indexOf("undefined") >= 0 && !words[1].indexOf("Olop") >= 0){
+        $("#down").html('Téléchrager :<br><a href="download.html#'+words[1]+'"><img src="Download_on_Olop.png" style="color:rgb(51,51,51);"></a>');
+        }else if(words[1].indexOf("Olop") >= 0){
+          $("#down").html('<a href="download.html#'+words[1]+'">Télécharger notre launcher</a>'); 
+        }
     });
     </script>
   </body>
