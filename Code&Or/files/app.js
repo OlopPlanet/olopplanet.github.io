@@ -1,6 +1,6 @@
 apploader();
 function apploader(){
-    ocument.querySelector("#chargement").style.display = "none";
+    document.querySelector("#chargement").style.display = "none";
                 document.querySelector("#load").style.display = "none";
                 document.querySelector("body").style.visibility = "visible";
                 document.body.background.color="rgb(70, 70, 70);";
