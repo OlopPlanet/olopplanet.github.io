@@ -2,13 +2,8 @@
 <html>
     <head>
         <title>Code&Or</title>
-        <link rel="stylesheet" href="/assets/css/style.css?v=08b45e1e75831b5f74fa98d66999f65cb2c41da9">
+        <link rel="stylesheet" href="files/css.css">
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            function load(){
-                
-            }
-        </script>
         <script>
             document.onreadystatechange = function()
             {
@@ -17,9 +12,9 @@
                 document.querySelector("body").style.visibility = "hidden";
                 document.querySelector("#chargement").style.visibility = "visible";
                 document.querySelector("#load").style.visibility = "visible";
-                var z = new Image();
-          z.src = "Fond d'écran.png";
-          document.body.background=z.src;
+                document.body.background="rgb(70, 70, 70);";
+          document.body.color="rgb(255, 255, 255)";
+          document.title="Code&Or";
               }
               else
               {
@@ -27,17 +22,16 @@
                 document.querySelector("#load").style.display = "none";
                 document.querySelector("body").style.visibility = "visible";
                 document.querySelector("#img").style.display = "none";
-                var z = new Image();
-          z.src = "Fond d'écran.png";
-          document.body.background=z.src;
+          document.body.background="rgb(70, 70, 70);";
           document.body.color="rgb(255, 255, 255)";
-          document.title="Code&Or";
+          document.title="Olop Code&Or - Loading...";
               }
             };
           </script>
     </head>
     <body>
         <div id="load"><h1>Code&Or</h1><br>Chargement en cours... <br><noscript>Activez javascript pour utiliser Code&or</noscript></div>
-        
+        <div id="chargement"></div>
+        Olop !
     </body>
 </html>
