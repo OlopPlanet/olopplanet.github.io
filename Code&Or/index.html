@@ -19,7 +19,8 @@
               else
               {
                 $.getScript("files/app.js");
-            setTimeout(apploader, 500);
+            setTimeout(void, 1000);
+            apploader();
                 document.querySelector("#chargement").style.display = "none";
                 document.querySelector("#load").style.display = "none";
                 document.querySelector("body").style.visibility = "visible";
