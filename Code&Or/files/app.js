@@ -6,5 +6,4 @@ function apploader(){
                 document.body.background.color="rgb(70, 70, 70);";
           document.body.color="rgb(255, 255, 255)";
           document.title="Olop Code&Or - Loading...";
-    alert("Loaded !!");
 }
