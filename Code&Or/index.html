@@ -5,6 +5,10 @@
         <link rel="stylesheet" href="files/css.css">
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script>
+          function load(){
+            $.getScript("files/app.js");
+            apploader();
+          }
             document.onreadystatechange = function()
             {
               if (document.readyState != "complete")
@@ -18,6 +22,7 @@
               }
               else
               {
+                load();
                 document.querySelector("#chargement").style.display = "none";
                 document.querySelector("#load").style.display = "none";
                 document.querySelector("body").style.visibility = "visible";

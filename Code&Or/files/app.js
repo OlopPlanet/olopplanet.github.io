@@ -1,0 +1,3 @@
+function apploader(){
+    alert("Loaded !!");
+}
