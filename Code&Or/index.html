@@ -9,6 +9,32 @@
                 
             }
         </script>
+        <script>
+            document.onreadystatechange = function()
+            {
+              if (document.readyState != "complete")
+              {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#chargement").style.visibility = "visible";
+                document.querySelector("#load").style.visibility = "visible";
+                var z = new Image();
+          z.src = "Fond d'écran.png";
+          document.body.background=z.src;
+              }
+              else
+              {
+                document.querySelector("#chargement").style.display = "none";
+                document.querySelector("#load").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+                document.querySelector("#img").style.display = "none";
+                var z = new Image();
+          z.src = "Fond d'écran.png";
+          document.body.background=z.src;
+          document.body.color="rgb(255, 255, 255)";
+          document.title="Code&Or";
+              }
+            };
+          </script>
     </head>
     <body>
         <div id="load"><h1>Code&Or</h1><br>Chargement en cours... <br><noscript>Activez javascript pour utiliser Code&or</noscript></div>
