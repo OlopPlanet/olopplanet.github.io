@@ -10,7 +10,7 @@
             console.log("Il y a "+nbrv+" vidéo(s)");
             for(var i=0;i<=nbrv;i++){
                 var link=$_GET('link'+i);
-                $("#video").html("<video id=\"vid\" controls width=\"250\"\ autoplay=\"true\"><source src=\""+link+"/media/cc0-videos/flower.mp4\" type=\"video/mp4\"></video>");
+                $("#video").html("<video id=\"vid\" controls width=\"250\"\ autoplay=\"true\"><source src=\""+link+"\" type=\"video/mp4\"></video>");
                 $('#vid').on('ended',function(){
       console.log('Video has ended!');
     });
