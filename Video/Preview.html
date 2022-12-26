@@ -5,8 +5,16 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        if($_GET('h')){
-
+        if($_GET('nbrv')){
+            var nbrv = parseInt($_GET('nbrv'));
+            console.log("Il y a "+nbrv+" vidéo(s)");
+            for(var i=0;i<=nbrv;i++){
+                var link=$_GET('link'+i);
+                $("#video").html("<video id=\"vid\" controls width=\"250\"\ autoplay=\"true\"><source src=\""+link+"/media/cc0-videos/flower.mp4\" type=\"video/mp4\"></video>");
+                $('#vid').on('ended',function(){
+      console.log('Video has ended!');
+    });
+            }
         }else {
             $("#video").html("Une erreur est survenue : Impossible de trouver le nombre de Vidéos.");
         }
