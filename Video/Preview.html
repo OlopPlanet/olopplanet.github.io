@@ -5,7 +5,11 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        
+        if($_GET('h')){
+
+        }else {
+            $("#video").html("Une erreur est survenue : Impossible de trouver le nombre de Vidéos.");
+        }
     });
     </script>
         <div id="video">Chargement en cours...<br>Un petit chat pour attendre ?<br><img src="https://i.natgeofe.com/k/ad9b542e-c4a0-4d0b-9147-da17121b4c98/MOmeow1.png" width="500"></div>
