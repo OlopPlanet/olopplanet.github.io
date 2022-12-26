@@ -8,6 +8,7 @@
         if($_GET('nbrv')){
             var nbrv = parseInt($_GET('nbrv'));
             console.log("Il y a "+nbrv+" vidéo(s)");
+            console.log('link'+i);
             for(var i=0;i<=nbrv;i++){
                 var link=$_GET('link'+i);
                 $("#video").html("<video id=\"vid\" controls width=\"250\"\ autoplay=\"true\"><source src=\""+link+"\" type=\"video/mp4\"></video>");
